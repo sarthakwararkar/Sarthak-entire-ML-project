@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: #f4f8fb;
+            color: #1f2937;
+            min-height: 100vh;
+        }
+        .page-shell {
+            padding: 40px 0 60px;
+        }
+        .hero-card {
+            border: none;
+            border-radius: 24px;
+            box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+            overflow: hidden;
+        }
+        .hero-card .hero-side {
+            background: linear-gradient(180deg, #4f46e5 0%, #2563eb 100%);
+            color: white;
+        }
+        .hero-card h1 {
+            font-size: 2.6rem;
+        }
+        .hero-card p {
+            max-width: 520px;
+        }
+        .section-card {
+            border: 1px solid rgba(148, 163, 184, 0.24);
+            border-radius: 18px;
+            min-height: 100%;
+        }
+        .section-card .card-body {
+            min-height: 230px;
+        }
+        .cta-btn {
+            min-width: 240px;
+        }
+        .feature-list li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container page-shell">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-10">
+                <div class="card hero-card">
+                    <div class="row g-0">
+                        <div class="col-lg-7 p-5">
+                            <div class="mb-4">
+                                <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill py-2 px-3">Academic ML Project</span>
+                            </div>
+                            <h1 class="fw-bold">Student Performance Predictor</h1>
+                            <p class="text-muted fs-5 mt-3">Use demographic, education, and exam-prep inputs to estimate a student’s expected performance with an ML regression pipeline.</p>
+                            <a href="predictdata" class="btn btn-primary btn-lg cta-btn">Open Prediction Form</a>
+                        </div>
+                        <div class="col-lg-5 hero-side p-5 d-flex flex-column justify-content-center">
+                            <h2 class="h4 mb-3">What you can do</h2>
+                            <p class="mb-4">Submit student features and receive a predicted score using the trained model. This page helps you quickly understand the input requirements.</p>
+                            <ul class="list-unstyled feature-list mb-0">
+                                <li>✔ Gender and ethnicity</li>
+                                <li>✔ Parental education</li>
+                                <li>✔ Lunch & prep course</li>
+                                <li>✔ Reading and writing scores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gy-4">
+            <div class="col-md-6">
+                <div class="card section-card p-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="fw-semibold">Model Inputs</h5>
+                        <p class="text-muted">The prediction form supports these student attributes:</p>
+                        <ul class="mb-0">
+                            <li>Gender</li>
+                            <li>Race / Ethnicity</li>
+                            <li>Parental Education</li>
+                            <li>Lunch Type</li>
+                            <li>Test Preparation</li>
+                            <li>Reading Score</li>
+                            <li>Writing Score</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card section-card p-4 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="fw-semibold">How it works</h5>
+                        <p class="text-muted">A preprocessor and trained regression model work together to transform submitted values and output an estimated student performance score.</p>
+                        <p class="mb-0">The app is built for fast experimentation with student data and clean model-driven predictions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
